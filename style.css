@@ -1,109 +1,81 @@
-body{
-    width: 100%;
-    height: 200vh;
-}
 .green-part{
-    background: #00ff00;
+    background: #a5c926
 }
 .green-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
-    color: #fff;
+    padding: 5px;
 }
 .green-wrapper .left{
     display: flex;
     align-items: center;
     gap: 20px;
+    color: #fff;
+    font-size: 14px;
 }
-.green-wrapper a{
+.green-wrapper .left a{
     color: #fff;
 }
-
 .green-wrapper .right i{
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
     cursor: pointer;
-    border-radius: 999px;
-    padding: 5px;
-}
-.green-wrapper .right i:hover{
-    background: rgba(0, 0, 0, .3);
-}
-nav{
-    width: 100%;
-    background: white;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.nav-wrapper{
-    width: 100%;
+nav{
+    background: #fff;
+}
+
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0;
 }
-.nav-wrapper .left{
+.nav .left{
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 60px;
 }
-.nav-wrapper .left{
+.nav .left .logo{
+    font-size: 25px;
+}
+.nav .menu{
     display: flex;
     align-items: center;
-}
-.menu{
-    display: flex;
-    align-items: center;
+    justify-content: center;
+    list-style: none;
     gap: 30px;
 }
-.menu li a{
+.nav .menu li a{
     text-decoration: none;
     color: #000;
 }
-.menu li a:hover{
+.nav .menu li a:hover{
     text-decoration: underline;
 }
 
-.logo a{
-    text-decoration: none;
-    font-size: 25px;
-    color: #000;
-}
-
-.nav-wrapper .right{
+.nav .right{
     display: flex;
     align-items: center;
-    gap: 30px;
-    font-size: 17px;
+    justify-content: center;
+    gap: 10px;
 }
-.nav-wrapper .right i{
+.nav .right i{
     font-size: 20px;
 }
-.nav-wrapper .right a{
-    text-decoration: none;
-    color: #000;
-}
-.nav-wrapper .right span{
-    background: #00ff00;
-    padding: 2px 8px;
-    border-radius: 999px;
+
+.nav .right span:last-child{
+    background: #a5c926;
     color: #fff;
-}
-.nav-wrapper .bx-menu{
-    font-size: 30px;
-    display: none;
+    border-radius: 999px;
+    padding: 2px 8px;
 }
 
 @media(max-width: 479px){
-    .green-wrapper{
-        font-size: 11px;
-    }
-    .green-wrapper .right i{
-        font-size: 12px;
-    }
     .green-wrapper .left span:last-child{
         display: none;
     }
